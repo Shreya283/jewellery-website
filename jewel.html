@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500&family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
+
+:root{
+--color: #333; 
+}
+
+body {
+  font-family: 'Red Hat Text', sans-serif;
+  background-color: #e1e8d5;
+  width: 100%;
+}
+
+.container {
+  text-align: center;
+  color: var(--color);
+  min-height: 180vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  min-width: 0vh;
+  
+  
+  
+/*  this is where the magic happens:  */
+  background-attachment: fixed;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 7rem;
+  letter-spacing: 3rem;
+  margin-bottom: 20px;
+}
+
+p {
+  max-width: 52ch;
+  line-height: 1.5;
+  padding: 1em;
+  margin-top: 10px;
+}
+
+a {
+  display: inline-block;
+  padding: 1em 3.5em;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.3em;
+  font-weight: 700;
+  letter-spacing: .5px;
+  font-size: .875rem;
+}
+
+.blank,
+.other {
+  width: 100%;
+  
+}
+
+.second {
+  background-image:url(closeup-shot-female-wearing-beautiful-silver-necklace-with-pendant.jpg);
+  background-attachment: fixed;
+  height: 1000px;
+
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-top: 1em;
+  color: rgb(216, 226, 183);
+}
+
+
+
+.item {
+  
+  display: flex;
+  max-width: 320px;
+  background-color: rgb(216, 226, 183);
+  flex-direction: column;
+  margin-right: 30px;
+  border-radius: .5em;
+  -webkit-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+  -moz-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+  box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+}
+
+.second {
+  flex-direction: row;
+  gap: 1.6em;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #33333300;
+  
+}
+
+.topnav a {
+  
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  float:right;
+}
+
+.topnav a:hover {
+  background-color: #2d2c2c;
+  color: rgb(212, 204, 204);
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: rgb(0, 0, 0);
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.you{
+  width:500px;height:300px;margin-right:33rem;margin-top: 9rem;
+}
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create three equal columns */
+    justify-items: center; /* Align items horizontally */
+  }
+
+  .image-container img {
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+
+  .image-container img:hover {
+    transform: scale(1.1);
+  }
+.na{
+  height: 50px;width: 50px;margin-right: 700px;
+}
+.containers{
+  color: var(--color);
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+/*  this is where the magic happens:  */
+  background-attachment: fixed;
+}
+.imagecontainer {
+    display: flex; /* Use flexbox for positioning */
+    align-items: center; /* Vertically align items */
+}
+
+.imagecontainer img {
+    max-width: 30%; /* Adjust the image width as needed */
+    margin-right: 30px;
+    margin-left: 50px; /* Add spacing between image and text */
+}
+
+.imagecontainer p {
+    flex: 1; /* Allow the paragraph to take remaining space */
+}
+
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 24px;
+}
+
+.btn-1{
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn-1 a {
+  text-decoration: none;
+  border: 2px solid #010100;
+  padding: 15px;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+}
+
+span {
+  position: relative;
+  /* z-index coz when we put bg to before and after this span text will not be visible */
+  z-index: 3;
+}
+
+/* Button 1 styles */
+
+.btn-1 a::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -2px;
+  width: calc(100% + 6px);
+  /*100% plus double the times left values*/
+  height: calc(100% - 10px);
+  background-color: #ffffff;
+  transition: all 0.5s ease-in-out;
+  transform: scaleY(1);
+}
+
+.btn-1 a:hover::before
+ {
+  transform: scaleY(0);
+}
+
+.btn-1 a::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: -5px;
+  width: calc(100% - 10px);
+  /*100% plus double the times left values*/
+  height: calc(100% + 10px);
+  background-color: #ffffff;
+  transition: all 0.5s ease-in-out;
+  transform: scaleX(1);
+}
+
+
+.btn-1 a:hover::after
+ {
+  transform: scaleX(0);
+}
+
+footer {
+  background-color:rgb(216, 226, 183);
+  color: #333333;
+  font-size: 16px;
+}
+footer * {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+.row {
+  padding: 1em 1em;
+}
+.row.primary {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  align-items: stretch;
+}
+.column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2em;
+  min-height: 15em;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+li:not(:first-child) {
+  margin-top: 0.8em;
+}
+ul li a {
+  color: #333333;
+  text-decoration: none;
+}
+ul li a:hover {
+  color: #000000;
+}
+.about p {
+  text-align: justify;
+  line-height: 2;
+  margin: 0;
+}
+input,
+button {
+  font-size: 1em;
+  padding: 1em;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+div.social {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2.4em;
+  flex-direction: row;
+  margin-top: 0.5em;
+}
+.social i {
+  color: #333333;
+}
+
+.copyright {
+  padding: 0.3em 1em;
+  background-color: #25262e;
+}
+.footer-menu{
+  float: left;
+    margin-top: 10px;
+}
+
+.footer-menu a{
+  color: #cfd2d6;
+  padding: 6px;
+
+  text-decoration: none;
+}
+.footer-menu a:hover{
+  color: #27bcda;
+}
+.copyright p {
+  font-size: 0.9em;
+  text-align: right;
+}
+@media screen and (max-width: 850px) {
+  .row.primary {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+</style>
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="#news">SIGNUP</a>
+    <a href="#contact">CONTACT</a>
+    <a href="#about">COLLECTION</a>
+    <a href="#about">ABOUT</a>
+    <img src="SHR.jpeg" class="na">
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  
+  <div class="container">
+    <h1 style="margin-top: 0px;font-family: 'Josefin Slab', serif;" >RIWAZ</h1>
+    <p style="letter-spacing: 3rem;font-size: 30px;">BEST JEWELLERY</p>
+    <div class="image-container">
+      <img src="abstract-gold-chain-jewellery-presentation.jpg" alt="Portrait" style="height:15rem;width:25rem ;margin-top: 7rem;" >
+      <img src="young-model-demonstrating-expensive-jewelry.jpg" alt="Image 1"style="height:35rem;width:25rem ;margin-left:2rem;margin-right:2.5rem;margin-bottom:5rem;">
+      <img src="fine-jewelry-promotion-ears-woman.jpg" alt="Image 3"style="height:20rem;width:30rem ;margin-top:13rem;">
+    </div>
+    <div class="con" >
+
+    </div>
+  </div>
+  
+
+  <div class="containers">
+    <center><p style="letter-spacing: 3rem;font-size: 30px;margin-bottom: 30px;">ABOUT US</p></center>
+    
+    
+      <div class="imagecontainer">
+        <img src="WhatsApp Image 2023-08-23 at 9.21.01 PM.jpeg" alt="Image">
+
+        <p style="font-size: 20px;text-align: justify;"><b>Welcome to RIWAZ!!!</b><br><br>At RIWAZ, we believe that every piece of jewelry tells a unique story, a reflection of your individuality and style. Our exquisite collection of handcrafted jewelry is designed to capture the essence of moments, emotions, and memories that are truly special to you.
+      
+          Founded with a passion for craftsmanship and a commitment to quality, RIWAZ has become a symbol of elegance and sophistication. Each piece in our collection is meticulously crafted by skilled artisans who pour their heart and soul into every detail. We take pride in using only the finest ethically sourced gemstones and metals, ensuring that your jewelry not only looks stunning but also carries a meaningful narrative.
+          
+          Our journey began with a vision to create jewelry that transcends time and trends. Whether you're celebrating a milestone, expressing your love, or simply treating yourself, we offer a diverse range of designs to suit every occasion. From classic and timeless to modern and bold, our jewelry pieces are designed to be cherished for a lifetime.
+        </div><br><br>
+        <div class="imagecontainer">
+          <p style="font-size: 20px;text-align: justify;">We understand that jewelry is more than an accessory – it's a statement. It's an extension of your personality, a way to connect with your inner self and share your story with the world. Our team is dedicated to helping you find the perfect piece that resonates with you, offering personalized guidance and assistance to make your experience truly exceptional.
+          
+            Thank you for choosing RIWAZ to be a part of your journey. Explore our collection and discover the magic that lies within each exquisitely crafted piece. Let us be a part of your story, and let your story shine through our jewelry.
+            
+            Elevate your style. Celebrate your moments. <br><BR>Express yourself with RIWAZ.</p>
+              <img src="WhatsApp Image 2023-08-23 at 10.02.12 PM.jpeg" alt="Image">
+
+          </div><br><br>
+    </div>
+    <br><br><br><br><br>
+
+    <div class="container second">
+      <div class="collection">
+          <h3 style="letter-spacing: 3rem; font-size: 50px;margin-right: 100px;">
+              C<br>O<br>L<br>L<br>E<br>C<br>T<br>I<br>O<br>N<br>S
+          </h3>
+      </div>
+  
+      <div class="items">
+          <div class="item">
+              <div class="img img-first"></div>
+              <div class="card">
+                  <h3 style="color: #333333;">EARINGS</h3>
+                  <img src="still-life-aesthetic-earrings.jpg" style="height: 300px; width: 300px;">
+              </div>
+          </div><br><br>
+          <div class="item">
+              <div class="img img-first"></div>
+              <div class="card">
+                  <h3 style="color: #333333;">RINGS</h3>
+                  <img src="woman-holding-beautiful-white-flower.jpg" style="height: 305px; width: 300px;">
+              </div>
+          </div>
+      </div>
+  
+      <div class="items">
+          <div class="item">
+              <div class="img img-second"></div>
+              <div class="card">
+                  <h3 style="color: #333333;">NECKLACES</h3>
+                  <img src="closeup-female-wearing-beautiful-silver-necklace.jpg" style="height: 300px; width: 290px;">
+              </div>
+          </div><br><br>
+          <div class="item">
+              <div class="img img-third"></div>
+              <div class="card">
+                  <h3 style="color: #333333;">BRACELETS</h3>
+                  <img src="bracelet.png" style="height: 300px; width: 290px;">
+              </div>
+          </div>
+      </div>
+    
+      <div class="center">
+        <div class="btn-1">
+          <a href=""><span>NEW COLLECTION</span></a>
+        </div>
+      </div>
+  
+      
+  </div>
+ 
+ 
+    <footer>
+      <div class="row primary">
+        <div class="column about">
+      
+        <h3 style="color: #000;">RIWAZ</h3>
+         <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+            voluptatem corporis error non,
+        </p>
+      
+        <div class="social">
+          <i class="fa-brands fa-facebook-square"></i>
+          <i class="fa-brands fa-instagram-square"></i>
+          <i class="fa-brands fa-twitter-square"></i>
+          <i class="fa-brands fa-youtube-square"></i>
+          <i class="fa-brands fa-whatsapp-square"></i>
+        </div>
+      </div>
+      
+      <div class="column links">
+      <h3 style="color: #000;">Some Links</h3>
+      
+       <ul>
+      
+        <li>
+         <a href="#faq">F.A.Q</a>
+        </li>
+        <li>
+         <a href="#cookies-policy">Cookies Policy</a>
+        </li>
+        <li>
+         <a href="#terms-of-services">Terms Of Service</a>
+        </li>
+        <li>
+         <a href="#support">Support</a>
+        </li>
+       </ul>
+      
+      </div>
+      
+      
+      <div class="column links">
+        <h3 style="color: #000;">Some Links</h3>
+         <ul>
+          <li>
+           <a href="#faq">F.A.Q</a>
+          </li>
+          <li>
+           <a href="#cookies-policy">Cookies Policy</a>
+          </li>
+          <li>
+          <a href="#terms-of-services">Terms Of Service</a>
+          </li>
+          <li>
+          <a href="#support">Support</a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="column subscribe">
+       <h3 style="color: #000;">Newsletter</h3>
+        <div>
+         <input type="email" placeholder="Your email id here" />
+         <button style="background-color: #000;color: #e1e8d5;">Subscribe</button>
+        </div>
+      
+      </div>
+      
+      </div>
+      
+      <div class="row copyright">
+         <center><p>Copyright &copy;2023 RIWAZ</p></center>
+      </div>
+      </footer>
+ 
+</body>
+</html>
